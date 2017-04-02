@@ -1,0 +1,38 @@
+$bgcolor: rgb(100, 100, 100);
+$color: white;
+$bordercolor: black; //rgb(200, 200, 200);
+
+:host {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $bordercolor;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  color: $color;
+  background-color: $bgcolor;
+  padding: 0.5em;
+  flex-shrink: 0;
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: red;
+}
+
+.footer {
+  color: $color;
+  background-color: $bgcolor;
+  //padding: 0.2em;
+  flex-shrink: 1;
+}
+
